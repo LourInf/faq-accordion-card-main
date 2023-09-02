@@ -79,7 +79,7 @@ body {
   right: 5px;
 }
 
-.details-sections[open].arrow[open] {
+.details-sections[open] .arrow[open] {
   transform: rotate(180deg);
   transition: 300ms;
 }
@@ -90,10 +90,46 @@ body {
   font-weight: 700;
 }
 
+.line {
+  border-color: transparent;
+  border-bottom-color: var(--Light-grayish-blue);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*.........................Desktop.................*/
+
+@media (min-width: 1044px) {
+  .main-card {
+    width: 900px;
+    min-height: 480px;
+    display: flex;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: -550px;
+    background-position-y: -300px;
+    background-size: 100%;
+  }
+
+  .main-image,
+  .faq-section {
+    width: 100%;
+  }
+
+  .img {
+    width: 420px;
+    margin: 60px 0px 0px 0px;
+  }
+  .faq-section {
+    padding: 20px 80px;
+  }
+
+  .title {
+    text-align: left;
+  }
 }
