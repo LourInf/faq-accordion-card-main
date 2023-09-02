@@ -29,7 +29,7 @@ body {
 .main-card {
   background-color: var(--white);
   width: 320px;
-  height: 510px;
+  min-height: 510px;
   border-radius: 28px;
   margin: 140px auto 30px;
   box-shadow: 0 10px 40px var(--Very-dark-desaturated-blue);
@@ -47,6 +47,49 @@ body {
   width: 240px;
   margin: -125px auto 0;
 }
+
+.title {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.details-sections {
+  margin: 16px 0;
+  position: relative;
+}
+
+.details-sections[open] {
+  font-weight: 700;
+}
+
+.questions {
+  list-style: none;
+  letter-spacing: 0.3px;
+}
+.solutions {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  padding-top: 10px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+.arrow {
+  position: absolute;
+  right: 5px;
+}
+
+.details-sections[open].arrow[open] {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.questions:hover {
+  cursor: pointer;
+  color: var(--Soft-red);
+  font-weight: 700;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
